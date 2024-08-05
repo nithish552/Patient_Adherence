@@ -1,0 +1,19 @@
+digest: 4b277623
+name: dataset
+profile: '{"num_rows": 8000, "num_elements": 136000}'
+schema: '{"mlflow_colspec": [{"type": "long", "name": "Age", "required": true}, {"type":
+  "string", "name": "Gender", "required": true}, {"type": "string", "name": "Race",
+  "required": true}, {"type": "string", "name": "InsuranceType", "required": true},
+  {"type": "long", "name": "MedianIncome", "required": true}, {"type": "string", "name":
+  "HospitalizationPriorYear", "required": true}, {"type": "string", "name": "MSRelatedHospitalization",
+  "required": true}, {"type": "string", "name": "RelapsePriorYear", "required": true},
+  {"type": "string", "name": "Disease", "required": true}, {"type": "string", "name":
+  "TherapeuticArea", "required": true}, {"type": "string", "name": "SpecialtyPharma",
+  "required": true}, {"type": "long", "name": "TrialLengthWeeks", "required": true},
+  {"type": "string", "name": "MicroReimbursements", "required": true}, {"type": "long",
+  "name": "DoseLengthSeconds", "required": true}, {"type": "double", "name": "DoseDelayHours",
+  "required": true}, {"type": "string", "name": "MedicationName", "required": true},
+  {"type": "string", "name": "BrandName", "required": true}]}'
+source: '{"tags": {"mlflow.user": "Hari Prashand", "mlflow.source.name": "run_pipeline.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "8e8fe1adff28c4fb6c0f77d59258b85a6fd2b180"}}'
+source_type: code

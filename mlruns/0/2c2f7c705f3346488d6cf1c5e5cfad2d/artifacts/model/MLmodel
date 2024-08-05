@@ -1,0 +1,36 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.5.1
+mlflow_version: 2.14.2
+model_size_bytes: 243737
+model_uuid: 7f8fbcf3797e444b8d11056f4275a7c2
+run_id: 2c2f7c705f3346488d6cf1c5e5cfad2d
+signature:
+  inputs: '[{"type": "long", "name": "Age", "required": true}, {"type": "string",
+    "name": "Gender", "required": true}, {"type": "string", "name": "Race", "required":
+    true}, {"type": "string", "name": "InsuranceType", "required": true}, {"type":
+    "long", "name": "MedianIncome", "required": true}, {"type": "string", "name":
+    "HospitalizationPriorYear", "required": true}, {"type": "string", "name": "MSRelatedHospitalization",
+    "required": true}, {"type": "string", "name": "RelapsePriorYear", "required":
+    true}, {"type": "string", "name": "Disease", "required": true}, {"type": "string",
+    "name": "TherapeuticArea", "required": true}, {"type": "string", "name": "SpecialtyPharma",
+    "required": true}, {"type": "long", "name": "TrialLengthWeeks", "required": true},
+    {"type": "string", "name": "MicroReimbursements", "required": true}, {"type":
+    "long", "name": "DoseLengthSeconds", "required": true}, {"type": "double", "name":
+    "DoseDelayHours", "required": true}, {"type": "string", "name": "MedicationName",
+    "required": true}, {"type": "string", "name": "BrandName", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int32", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-08-04 04:08:28.217154'

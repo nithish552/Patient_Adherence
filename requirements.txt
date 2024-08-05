@@ -1,0 +1,10 @@
+joblib
+xgboost
+optuna
+streamlit
+markupsafe
+zenml
+scikit-learn
+pandas
+gradio
+pymango

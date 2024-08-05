@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Hari%20Prashand/Desktop/Patient_Adherence/mlruns/0/2c2f7c705f3346488d6cf1c5e5cfad2d/artifacts
+end_time: 1722744525526
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2c2f7c705f3346488d6cf1c5e5cfad2d
+run_name: funny-grouse-180
+run_uuid: 2c2f7c705f3346488d6cf1c5e5cfad2d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722743894355
+status: 3
+tags: []
+user_id: Hari Prashand
