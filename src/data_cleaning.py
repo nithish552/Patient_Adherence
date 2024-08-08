@@ -39,15 +39,13 @@ class DataProcessStrategy(DataStrategy):
     """
     def handle_data(self, data: pd.DataFrame) -> pd.DataFrame:
         try:
-            data = data.drop(
-                [
-                    'Unnamed: 0.2', 
-                    'Unnamed: 0.1', 
-                    'Unnamed: 0', 
-                    'PatientID'
-                ],
-                axis=1
-            )
+            # data = data.drop(
+            #     [ 
+            #         'Unnamed: 0', 
+            #         'PatientID'
+            #     ],
+            #     axis=1
+            # )
             
             numerical_features = data.select_dtypes(include=['number']).columns
             for feature in numerical_features:

@@ -1,4 +1,4 @@
 from zenml.steps import BaseParameters
 
 class ModelNameConfig(BaseParameters):
-    model_name: str = "xgboost"
+    model_name: str = "RandomForest"
