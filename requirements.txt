@@ -8,3 +8,9 @@ scikit-learn
 pandas
 gradio
 pymango
+decrypt
+session
+pickle
+pandas 
+numpy 
+time
