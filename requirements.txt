@@ -11,6 +11,5 @@ pymango
 decrypt
 session
 pickle
-pandas 
 numpy 
 time
