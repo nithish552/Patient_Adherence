@@ -11,25 +11,17 @@ st.set_page_config(
 import base64
 
 
-@st.cache_data
-def get_base64_of_bin_file(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
-img_file = 'pages/image1.jpg'
-img_base64 = get_base64_of_bin_file(img_file)
-
+img_url = "https://drive.google.com/file/d/1bVsrLn8xozPadpPRL2P6EU2zv0a8S-ab/view?usp=sharing"
 page_bg_img = f'''
 <style>
 [data-testid="stAppViewContainer"] {{
-    background-image: url("data:image/jpeg;base64,{img_base64}");
+    background-image: url("{img_url}");
     background-size: cover;
 }}
 </style>
 '''
-
 st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.markdown("""
     <style>
     .header {
