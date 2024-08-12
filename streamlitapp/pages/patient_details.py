@@ -137,7 +137,7 @@ if st.session_state.get('logged_in'):
         st.markdown('<div class="custom-text">Accuracy: 79.71% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precision: 63.5%</div>', unsafe_allow_html=True)
         st.markdown('<div class="custom-text">Recall: 79.7% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 Score: 70.7%</div>', unsafe_allow_html=True)
         
-        image = Image.open('.\imagefiles\Model Metrics\MLP Classifier\MLP training_confusion_matrix.png')  # Replace with your image path 
+        image = Image.open('./imagefiles/Model Metrics/MLP Classifier/MLP training_confusion_matrix.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
     
@@ -183,7 +183,7 @@ if st.session_state.get('logged_in'):
             unsafe_allow_html=True
         )
 
-    main_bg_path = 'imagefiles\pexels-pixabay-40568.jpg'
+    main_bg_path = 'imagefiles/pexels-pixabay-40568.jpg'
     
     # Add background images
     add_bg_from_local(main_bg_path)
