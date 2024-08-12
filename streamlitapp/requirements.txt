@@ -5,3 +5,4 @@ pandas
 gradio_client
 joblib 
 scikit-learn 
+xgboost
