@@ -8,7 +8,6 @@ scikit-learn
 pandas
 gradio
 pymango
-decrypt
 session
 pickle
 numpy 
