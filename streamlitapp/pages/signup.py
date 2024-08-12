@@ -2,9 +2,25 @@ import streamlit as st
 from auth import signup_user
 from session import set_session
 from time import sleep
+
+st.markdown(
+        """
+        <style>
+        .streamlit-expander, .streamlit-container {
+            width: 100%;
+            max-width: 100%;
+        }
+        .stForm {
+            width: 100%;
+            max-width: 100%;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
 def signup_page():
     st.title("Sign Up")
-
     with st.form(key='signup_form'):
         email=st.text_input("Email")
         username = st.text_input("Username")

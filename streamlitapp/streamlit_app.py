@@ -8,7 +8,9 @@ st.set_page_config(
     layout='centered'
 )
 
+
 import base64
+
 
 @st.cache_data
 def get_base64_of_bin_file(bin_file):
@@ -29,12 +31,73 @@ page_bg_img = f'''
 '''
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
+st.markdown(
+    """
+    <style>
+    .header {
+        font-size: 36px; /* Larger font size */
+        font-weight: bold; /* Make text bold */
+        color: #333333; /* Dark gray text color for better readability */
+        background-color: #f8f9fa; /* Light background color */
+        padding: 20px; /* Add padding */
+        border-radius: 10px; /* Rounded corners */
+        text-align: center; /* Center text */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for light theme */
+        margin-bottom: 20px; /* Space below the header */
+        text-transform: uppercase; /* Uppercase text */
+        border: 1px solid #ddd; /* Light border to define edges */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-st.header("Welcome To")
-st.header("Patient Adherence Analysis")
-if st.button(label="Sign in"):
-    st.switch_page('pages/login.py')
+# Header with the new style
+st.markdown(
+    """
+    <div class="header">
+        Welcome To Patient Adherence Analysis
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
+# Define custom CSS for the button
+st.markdown(
+    """
+    <style>
+    .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px; /* Space from the top */
+    }
+    .button-container button {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #007bff; /* Light blue background */
+        color: #ffffff; /* White text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+    .button-container button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Center the button using HTML
+st.markdown(
+    """
+    <div class="button-container">
+        <button onclick="window.location.href='/pages/login.py'">Sign In</button>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 def home_page():
     get_session()
