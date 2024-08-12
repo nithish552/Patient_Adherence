@@ -117,7 +117,7 @@ if st.session_state.get('logged_in'):
             </style>
             """, unsafe_allow_html=True)
     if input == "Current Model":
-        image = Image.open('imagefiles/final_confusion_mat.png')  # Replace with your image path 
+        image = Image.open('pages/imagefiles/final_confusion_mat.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
         
@@ -128,7 +128,7 @@ if st.session_state.get('logged_in'):
         st.markdown('<div class="custom-text">Accuracy: 80.48% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precision: 80.4%</div>', unsafe_allow_html=True)
         st.markdown('<div class="custom-text">Recall: 80.3% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 Score: 72.5%</div>', unsafe_allow_html=True)
         
-        image = Image.open('imagefiles/Model Metrics/XgBoost/training_confusion_matrix.png')  # Replace with your image path 
+        image = Image.open('pages/imagefiles/Model Metrics/XgBoost/training_confusion_matrix.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
 
@@ -137,7 +137,7 @@ if st.session_state.get('logged_in'):
         st.markdown('<div class="custom-text">Accuracy: 79.71% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precision: 63.5%</div>', unsafe_allow_html=True)
         st.markdown('<div class="custom-text">Recall: 79.7% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 Score: 70.7%</div>', unsafe_allow_html=True)
         
-        image = Image.open('imagefiles/Model Metrics/MLP Classifier/MLP training_confusion_matrix.png')  # Replace with your image path 
+        image = Image.open('pages/imagefiles/Model Metrics/MLP Classifier/MLP training_confusion_matrix.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
     
@@ -146,7 +146,7 @@ if st.session_state.get('logged_in'):
         st.markdown('<div class="custom-text">Accuracy: 79.9% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precision: 83.9%</div>', unsafe_allow_html=True)
         st.markdown('<div class="custom-text">Recall: 79.9% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 Score: 72.5%</div>', unsafe_allow_html=True)
         
-        image = Image.open('imagefiles/Model Metrics/Gradient Boosting/training_confusion_matrix.png')  # Replace with your image path 
+        image = Image.open('pages/imagefiles/Model Metrics/Gradient Boosting/training_confusion_matrix.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption='Confusion Matrix', use_column_width=True)
         
@@ -156,7 +156,7 @@ if st.session_state.get('logged_in'):
         st.markdown('<div class="custom-text">Accuracy: 79.7% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Precision: 63.3%</div>', unsafe_allow_html=True)
         st.markdown('<div class="custom-text">Recall: 79.7% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F1 Score: 72.5%</div>', unsafe_allow_html=True)
         
-        image = Image.open('imagefiles/Model Metrics/Logistic regression/training_confusion_matrix (1).png')  # Replace with your image path 
+        image = Image.open('pages/imagefiles/Model Metrics/Logistic regression/training_confusion_matrix (1).png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
         
@@ -183,7 +183,7 @@ if st.session_state.get('logged_in'):
             unsafe_allow_html=True
         )
 
-    main_bg_path = 'imagefiles/pexels-pixabay-40568.jpg'
+    main_bg_path = 'pages/imagefiles/pexels-pixabay-40568.jpg'
     
     # Add background images
     add_bg_from_local(main_bg_path)
