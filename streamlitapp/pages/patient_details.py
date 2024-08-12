@@ -117,7 +117,7 @@ if st.session_state.get('logged_in'):
             </style>
             """, unsafe_allow_html=True)
     if input == "Current Model":
-        image = Image.open('./imagefiles/Model Metrics/XgBoost/training_confusion_matrix.png')  # Replace with your image path 
+        image = Image.open('./imagefiles/final_confusion_mat.png')  # Replace with your image path 
         # Display the image in Streamlit
         st.image(image, caption= 'Confusion Matrix', use_column_width=True)
         
@@ -228,7 +228,7 @@ if st.session_state.get('logged_in'):
                 }
                 
             
-                user_df = pd.DataFrame(s)
+                user_df = pd.DataFrame([s])
                 
                 user_df_processed = preprocessor.transform(user_df)
                 
