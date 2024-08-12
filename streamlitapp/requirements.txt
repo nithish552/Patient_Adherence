@@ -6,3 +6,4 @@ gradio_client
 joblib 
 scikit-learn 
 xgboost
+PIL
