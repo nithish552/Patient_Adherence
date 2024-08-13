@@ -8,7 +8,6 @@ scikit-learn
 pandas
 gradio
 pymango
-session
 pickle
 numpy 
 time
