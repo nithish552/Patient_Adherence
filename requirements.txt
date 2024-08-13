@@ -12,3 +12,4 @@ gradio
 pymango
 numpy 
 openpyxl
+mlflow
